@@ -1,4 +1,19 @@
 # CHANGE LOG
+## v2.0.0
+
+
+### 🚀 Enhancements
+
+  - **v2:** ⚠️  Support install component via vue plugin (b0515f5)
+
+#### ⚠️  Breaking Changes
+
+  - **v2:** ⚠️  Support install component via vue plugin (b0515f5)
+
+### ❤️  Contributors
+
+- Wenqing <wenqing@kerrylan.com>
+
 ## v1.2.1
 
 
