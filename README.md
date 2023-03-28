@@ -38,9 +38,31 @@ $ npm i vue-symbol-icon
 ``` vue
 <template>
   <svg-icon icon-class="svg-symbol-name" font-size="36px" color="red" />
+
   <!-- In v1.2.0 and above -->
   <svg-icon name="svg-symbol-name" font-size="36px" color="red" />
 </template>
+```
+
+In `v2.x`, you can use `vue-symbol-icon` as a global component via vue plugin:
+
+```js
+import Vue from 'vue'
+import SvgIcon from 'vue-symbol-icon'
+
+Vue.use(SvgIcon)
+```
+
+Or, Local registration:
+
+```js
+import { SvgIcon } from 'vue-symbol-icon'
+
+export default {
+  components: {
+    SvgIcon
+  }
+}
 ```
 
 # Properties
