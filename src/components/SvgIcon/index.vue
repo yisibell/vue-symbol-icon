@@ -16,28 +16,39 @@
       :font-size="fontSize"
       aria-hidden="true"
     >
-      <use :href="iconName" />
+      <use :href="symbolId" />
     </svg>
   </span>
 </template>
 
 <script>
 export default {
-  name: 'AiSvgIcon',
+  name: 'SvgIcon',
   props: {
+    // symbol name prefix
+    symbolPrefix: {
+      type: String,
+      default: 'icon-'
+    },
+    // symbol name
+    name: {
+      type: String,
+      default: ''
+    },
+    // alias of name
     iconClass: {
       type: String,
-      required: true
-    },
-    className: {
-      type: String,
-      default: undefined
+      default: ''
     },
     color: {
       type: String,
       default: undefined
     },
     fontSize: {
+      type: String,
+      default: undefined
+    },
+    className: {
       type: String,
       default: undefined
     }
@@ -49,16 +60,19 @@ export default {
         '--svg-icon-font-size': this.fontSize
       }
     },
-    isExternal () {
-      return this.isOutLinks(this.iconClass)
+    symbolName () {
+      return this.name || this.iconClass || ''
     },
-    iconName () {
-      return `#icon-${this.iconClass}`
+    symbolId () {
+      return `#${this.symbolPrefix}${this.symbolName}`
+    },
+    isExternal () {
+      return this.isOutLinks(this.symbolName)
     },
     styleExternalIcon () {
       return {
-        mask: `url(${this.iconClass}) no-repeat 50% 50%`,
-        '-webkit-mask': `url(${this.iconClass}) no-repeat 50% 50%`
+        mask: `url(${this.symbolName}) no-repeat 50% 50%`,
+        '-webkit-mask': `url(${this.symbolName}) no-repeat 50% 50%`
       }
     }
   },
@@ -82,7 +96,7 @@ export default {
     setSVGPathToCurrentColor () {
       if (!this.color) return
       this.$nextTick(() => {
-        const targetSymbol = document.querySelector(`${this.iconName}`)
+        const targetSymbol = document.querySelector(`${this.symbolId}`)
         targetSymbol && targetSymbol.classList.add('use-current-color')
       })
     }
@@ -114,7 +128,7 @@ export default {
 </style>
 
 <style>
-svg#__SVG_SPRITE_NODE__ .use-current-color path {
+svg .use-current-color path {
   fill: currentColor !important;
   stroke: currentColor !important;
 }

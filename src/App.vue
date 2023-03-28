@@ -2,31 +2,31 @@
   <div id="app">
     <h3>单色图标：</h3>
     <svg-icon
-      icon-class="app"
+      name="app"
       class="test"
       color="red"
       font-size="36px"
     />
     <svg-icon
-      icon-class="dashboard"
+      name="dashboard"
       class="test"
       color="skyblue"
       font-size="36px"
     />
     <svg-icon
-      icon-class="text-underline"
+      name="text-underline"
       color="yellow"
       font-size="36px"
     />
     <svg-icon
-      icon-class="text-de-line-through"
+      name="text-de-line-through"
       font-size="36px"
     />
 
     <h3>多色图标：</h3>
 
     <svg-icon
-      icon-class="buding"
+      name="buding"
       font-size="36px"
     />
   </div>

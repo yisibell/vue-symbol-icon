@@ -35,22 +35,39 @@ $ npm i vue-symbol-icon
 
 # Usage
 
-**demo.vue**
-
 ``` vue
 <template>
-  <svg-icon icon-class="svg-symbol-id" font-size="36px" color="red" />
+  <svg-icon icon-class="svg-symbol-name" font-size="36px" color="red" />
+  <!-- In v1.2.0 and above -->
+  <svg-icon name="svg-symbol-name" font-size="36px" color="red" />
 </template>
 ```
 
 # Properties
 
-| Prop name | Default value | Required  | Description | Type |
-| :---: | :---: | :---:| :---: | :---: |
-| `icon-class` | `undefined` | `true` |  SVG Symbol Id which is SVG filename in the SVG folder.  | `string` |
-| `className` | `undefined` | `false` | Add Extra class name to SVG Element | `string` |
-| `color` | `undefined` | `false` | Define SVG color | `string` |
-| `fontSize` | `undefined` | `false` | Define SVG size  | `string` |
+| Prop name | Default value | Required  | Description | Type | Support version |
+| :---: | :---: | :---:| :---: | :---: | :---: |
+| `name` | `undefined` | `false` |  SVG **symbol name** which is SVG filename in the SVG folder.  | `string` | `v1.2.0` |
+| `symbolPrefix` | `icon-` | `false` |  SVG **symbol id prefix**.  | `string` | `v1.2.0` |
+| `icon-class` | `undefined` | `fase` |  alias of `name` | `string` | `v1.1.0` |
+| `className` | `undefined` | `false` | Add Extra class name to SVG Element | `string` | `v1.1.0` |
+| `color` | `undefined` | `false` | Define SVG color | `string` | `v1.1.0` |
+| `fontSize` | `undefined` | `false` | Define SVG size  | `string` | `v1.1.0` |
+
+
+:warning: TIPS,  `name` and `symbolPrefix` form the **Symbol id**.
+
+```vue
+<template>
+  <svg-icon symbol-prefix="icon-" name="symbol-name" />
+</template>
+```
+
+It's look like:
+
+```html
+<svg><use href="icon-symbol-name" /></svg>
+```
 
 # How to config **svg-sprite-loader** ?
 
