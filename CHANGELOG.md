@@ -1,4 +1,19 @@
 # CHANGE LOG
+## v1.2.0
+
+
+### 🚀 Enhancements
+
+  - Support symbolPrefix prop; use name prop instead of icon-class (fbc34c9)
+
+### 🏡 Chore
+
+  - **docs:** Update readme (1731914)
+
+### ❤️  Contributors
+
+- Wenqing <wenqing@kerrylan.com>
+
 ## v1.1.0
 
 

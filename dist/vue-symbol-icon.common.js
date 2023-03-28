@@ -1,7 +1,7 @@
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 341:
+/***/ 13:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -15,14 +15,14 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".svg-icon-wrapper[data-v-5aa6fb39]{display:inline-flex;justify-content:center;align-items:center;color:var(--svg-icon-color);font-size:var(--svg-icon-font-size)}.svg-icon[data-v-5aa6fb39]{width:1em;height:1em;fill:currentColor;stroke:currentColor}.svg-external-icon[data-v-5aa6fb39]{background-color:currentColor;-webkit-mask-size:cover!important;mask-size:cover!important;display:inline-block}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".svg-icon-wrapper[data-v-a02e1a06]{display:inline-flex;justify-content:center;align-items:center;color:var(--svg-icon-color);font-size:var(--svg-icon-font-size)}.svg-icon[data-v-a02e1a06]{width:1em;height:1em;fill:currentColor;stroke:currentColor}.svg-external-icon[data-v-a02e1a06]{background-color:currentColor;-webkit-mask-size:cover!important;mask-size:cover!important;display:inline-block}", ""]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
 
 /***/ }),
 
-/***/ 477:
+/***/ 525:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -36,7 +36,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "svg#__SVG_SPRITE_NODE__ .use-current-color path{fill:currentColor!important;stroke:currentColor!important}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "svg .use-current-color path{fill:currentColor!important;stroke:currentColor!important}", ""]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -147,35 +147,35 @@ module.exports = function (i) {
 
 /***/ }),
 
-/***/ 89:
+/***/ 849:
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(341);
+var content = __webpack_require__(13);
 if(content.__esModule) content = content.default;
 if(typeof content === 'string') content = [[module.id, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
 var add = (__webpack_require__(402)/* ["default"] */ .Z)
-var update = add("394bcc71", content, true, {"sourceMap":false,"shadowMode":false});
+var update = add("546a21c6", content, true, {"sourceMap":false,"shadowMode":false});
 
 /***/ }),
 
-/***/ 64:
+/***/ 144:
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(477);
+var content = __webpack_require__(525);
 if(content.__esModule) content = content.default;
 if(typeof content === 'string') content = [[module.id, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
 var add = (__webpack_require__(402)/* ["default"] */ .Z)
-var update = add("82cd9d32", content, true, {"sourceMap":false,"shadowMode":false});
+var update = add("a595c388", content, true, {"sourceMap":false,"shadowMode":false});
 
 /***/ }),
 
@@ -545,7 +545,7 @@ if (typeof window !== 'undefined') {
 // Indicate to webpack that this file can be concatenated
 /* harmony default export */ var setPublicPath = (null);
 
-;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/SvgIcon/index.vue?vue&type=template&id=5aa6fb39&scoped=true&
+;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/SvgIcon/index.vue?vue&type=template&id=a02e1a06&scoped=true&
 var render = function render() {
   var _vm = this,
     _c = _vm._self._c;
@@ -563,7 +563,7 @@ var render = function render() {
     }
   }, [_c('use', {
     attrs: {
-      "href": _vm.iconName
+      "href": _vm.symbolId
     }
   })])]);
 };
@@ -571,21 +571,32 @@ var staticRenderFns = [];
 
 ;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/SvgIcon/index.vue?vue&type=script&lang=js&
 /* harmony default export */ var SvgIconvue_type_script_lang_js_ = ({
-  name: 'AiSvgIcon',
+  name: 'SvgIcon',
   props: {
+    // symbol name prefix
+    symbolPrefix: {
+      type: String,
+      default: 'icon-'
+    },
+    // symbol name
+    name: {
+      type: String,
+      default: ''
+    },
+    // alias of name
     iconClass: {
       type: String,
-      required: true
-    },
-    className: {
-      type: String,
-      default: undefined
+      default: ''
     },
     color: {
       type: String,
       default: undefined
     },
     fontSize: {
+      type: String,
+      default: undefined
+    },
+    className: {
       type: String,
       default: undefined
     }
@@ -597,16 +608,19 @@ var staticRenderFns = [];
         '--svg-icon-font-size': this.fontSize
       };
     },
-    isExternal() {
-      return this.isOutLinks(this.iconClass);
+    symbolName() {
+      return this.name || this.iconClass || '';
     },
-    iconName() {
-      return `#icon-${this.iconClass}`;
+    symbolId() {
+      return `#${this.symbolPrefix}${this.symbolName}`;
+    },
+    isExternal() {
+      return this.isOutLinks(this.symbolName);
     },
     styleExternalIcon() {
       return {
-        mask: `url(${this.iconClass}) no-repeat 50% 50%`,
-        '-webkit-mask': `url(${this.iconClass}) no-repeat 50% 50%`
+        mask: `url(${this.symbolName}) no-repeat 50% 50%`,
+        '-webkit-mask': `url(${this.symbolName}) no-repeat 50% 50%`
       };
     }
   },
@@ -630,7 +644,7 @@ var staticRenderFns = [];
     setSVGPathToCurrentColor() {
       if (!this.color) return;
       this.$nextTick(() => {
-        const targetSymbol = document.querySelector(`${this.iconName}`);
+        const targetSymbol = document.querySelector(`${this.symbolId}`);
         targetSymbol && targetSymbol.classList.add('use-current-color');
       });
     }
@@ -638,13 +652,13 @@ var staticRenderFns = [];
 });
 ;// CONCATENATED MODULE: ./src/components/SvgIcon/index.vue?vue&type=script&lang=js&
  /* harmony default export */ var components_SvgIconvue_type_script_lang_js_ = (SvgIconvue_type_script_lang_js_); 
-// EXTERNAL MODULE: ./node_modules/vue-style-loader/index.js??clonedRuleSet-12.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/SvgIcon/index.vue?vue&type=style&index=0&id=5aa6fb39&prod&scoped=true&lang=css&
-var SvgIconvue_type_style_index_0_id_5aa6fb39_prod_scoped_true_lang_css_ = __webpack_require__(89);
-;// CONCATENATED MODULE: ./src/components/SvgIcon/index.vue?vue&type=style&index=0&id=5aa6fb39&prod&scoped=true&lang=css&
+// EXTERNAL MODULE: ./node_modules/vue-style-loader/index.js??clonedRuleSet-12.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/SvgIcon/index.vue?vue&type=style&index=0&id=a02e1a06&prod&scoped=true&lang=css&
+var SvgIconvue_type_style_index_0_id_a02e1a06_prod_scoped_true_lang_css_ = __webpack_require__(849);
+;// CONCATENATED MODULE: ./src/components/SvgIcon/index.vue?vue&type=style&index=0&id=a02e1a06&prod&scoped=true&lang=css&
 
-// EXTERNAL MODULE: ./node_modules/vue-style-loader/index.js??clonedRuleSet-12.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/SvgIcon/index.vue?vue&type=style&index=1&id=5aa6fb39&prod&lang=css&
-var SvgIconvue_type_style_index_1_id_5aa6fb39_prod_lang_css_ = __webpack_require__(64);
-;// CONCATENATED MODULE: ./src/components/SvgIcon/index.vue?vue&type=style&index=1&id=5aa6fb39&prod&lang=css&
+// EXTERNAL MODULE: ./node_modules/vue-style-loader/index.js??clonedRuleSet-12.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/SvgIcon/index.vue?vue&type=style&index=1&id=a02e1a06&prod&lang=css&
+var SvgIconvue_type_style_index_1_id_a02e1a06_prod_lang_css_ = __webpack_require__(144);
+;// CONCATENATED MODULE: ./src/components/SvgIcon/index.vue?vue&type=style&index=1&id=a02e1a06&prod&lang=css&
 
 ;// CONCATENATED MODULE: ./node_modules/@vue/vue-loader-v15/lib/runtime/componentNormalizer.js
 /* globals __VUE_SSR_CONTEXT__ */
@@ -760,7 +774,7 @@ var component = normalizeComponent(
   staticRenderFns,
   false,
   null,
-  "5aa6fb39",
+  "a02e1a06",
   null
   
 )
