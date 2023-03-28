@@ -45,14 +45,14 @@ $ npm i vue-symbol-icon
 
 # Properties
 
-| Prop name | Default value | Required  | Description | Type | Support version |
-| :---: | :---: | :---:| :---: | :---: | :---: |
-| `name` | `undefined` | `false` |  SVG **symbol name** which is SVG filename in the SVG folder.  | `string` | `v1.2.0` |
-| `symbolPrefix` | `icon-` | `false` |  SVG **symbol id prefix**.  | `string` | `v1.2.0` |
-| `icon-class` | `undefined` | `fase` |  alias of `name` | `string` | `v1.1.0` |
-| `className` | `undefined` | `false` | Add Extra class name to SVG Element | `string` | `v1.1.0` |
-| `color` | `undefined` | `false` | Define SVG color | `string` | `v1.1.0` |
-| `fontSize` | `undefined` | `false` | Define SVG size  | `string` | `v1.1.0` |
+| Prop name | Default value | Description | Type | Support version |
+| :---: | :---: | :---: | :---: | :---: |
+| `name` | `undefined` |   SVG **symbol name** which is SVG filename in the SVG folder.  | `string` | `v1.2.0` |
+| `symbolPrefix` | `icon-` |   SVG **symbol id prefix**.  | `string` | `v1.2.0` |
+| `icon-class` | `undefined` |   alias of `name` | `string` | `v1.1.0` |
+| `className` | `undefined` |  Add Extra class name to SVG Element | `string` | `v1.1.0` |
+| `color` | `undefined` | Define SVG color | `string` | `v1.1.0` |
+| `fontSize` | `undefined` | Define SVG size  | `string` | `v1.1.0` |
 
 
 :warning: TIPS,  `name` and `symbolPrefix` form the **Symbol id**.
@@ -120,7 +120,12 @@ import Vue from 'vue'
 import SvgIcon from 'vue-symbol-icon' // svg component
 
 // 1. register globally
-Vue.component('svg-icon', SvgIcon) 
+
+// In vue-symbol-icon 1.x
+// Vue.component('SvgIcon', SvgIcon) 
+
+// In vue-symbol-icon 2.x
+Vue.use(SvgIcon)
 
 // 2. require svg files
 const req = require.context('./svg', false, /\.svg$/)
@@ -186,7 +191,12 @@ import Vue from 'vue'
 import SvgIcon from 'vue-symbol-icon' // svg component
 
 // 1. register globally
-Vue.component('svg-icon', SvgIcon) 
+
+// In vue-symbol-icon 1.x
+// Vue.component('SvgIcon', SvgIcon) 
+
+// In vue-symbol-icon 2.x
+Vue.use(SvgIcon)
 
 // 2. require svg files
 const req = require.context('~/assets/icons/svg', false, /\.svg$/)

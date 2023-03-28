@@ -532,9 +532,12 @@ var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be in strict mode.
 !function() {
 "use strict";
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
+  "SvgIcon": function() { return /* reexport */ SvgIcon; },
   "default": function() { return /* binding */ entry_lib; }
 });
 
@@ -790,14 +793,22 @@ var component = normalizeComponent(
 )
 
 /* harmony default export */ var SvgIcon = (component.exports);
+;// CONCATENATED MODULE: ./src/components/index.js
+
+const install = Vue => {
+  Vue.component(SvgIcon.name, SvgIcon);
+};
+
+/* harmony default export */ var components = ({
+  install
+});
 ;// CONCATENATED MODULE: ./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js
 
 
-/* harmony default export */ var entry_lib = (SvgIcon);
+/* harmony default export */ var entry_lib = (components);
 
 
 }();
-__webpack_exports__ = __webpack_exports__["default"];
 /******/ 	return __webpack_exports__;
 /******/ })()
 ;
