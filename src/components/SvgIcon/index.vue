@@ -33,12 +33,12 @@ export default {
     // symbol name
     name: {
       type: String,
-      default: ''
+      default: undefined
     },
     // alias of name
     iconClass: {
       type: String,
-      default: ''
+      default: undefined
     },
     color: {
       type: String,

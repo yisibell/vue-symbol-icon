@@ -66,7 +66,7 @@ $ npm i vue-symbol-icon
 It's look like:
 
 ```html
-<svg><use href="icon-symbol-name" /></svg>
+<svg><use href="#icon-symbol-name" /></svg>
 ```
 
 # How to config **svg-sprite-loader** ?
