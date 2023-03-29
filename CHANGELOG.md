@@ -1,4 +1,15 @@
 # CHANGE LOG
+## v2.0.2
+
+
+### 🏡 Chore
+
+  - **docs:** Update docs for nuxt2 (5c3b0d2)
+
+### ❤️  Contributors
+
+- Wenqing <wenqing@kerrylan.com>
+
 ## v2.0.1
 
 
