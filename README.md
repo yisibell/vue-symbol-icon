@@ -169,77 +169,7 @@ new Vue({
 
 ## In Nuxt2
 
-1. First, config `webpack` in the `nuxt.config.js`:
-
-``` js
-// nuxt.config.js
-
-export default {
-  // ...
-  // Build Configuration (https://go.nuxtjs.dev/config-build)
-  build: {
-    /*
-     ** You can extend webpack config here
-     */
-    extend(config, { isClient }) {
-      if (isClient) {
-        const svgRule = config.module.rules.find((rule) =>
-          rule.test.test('.svg')
-        )
-        svgRule.exclude = [resolve('assets/icons/svg')]
-
-        // Includes /assets/icons/svg for svg-sprite-loader
-        config.module.rules.push({
-          test: /\.svg$/,
-          include: [resolve('assets/icons/svg')],
-          loader: 'svg-sprite-loader',
-          options: {
-            symbolId: 'icon-[name]',
-          },
-        })
-      }
-    },
-  }
-  // ...
-}
-```
-
-2. Centralize your `*.svg` icon files in the `~/assets/icons/svg` folder.
-
-3. Create a new `~/plugins/svg-icon.js` file and write in it:
-
-``` js
-import Vue from 'vue'
-import SvgIcon from 'vue-symbol-icon' // svg component
-
-// 1. register globally
-
-// In vue-symbol-icon 1.x
-// Vue.component('SvgIcon', SvgIcon) 
-
-// In vue-symbol-icon 2.x
-Vue.use(SvgIcon)
-
-// 2. require svg files
-const req = require.context('~/assets/icons/svg', false, /\.svg$/)
-const requireAll = (requireContext) => requireContext.keys().forEach(requireContext)
-requireAll(req)
-```
-
-4. Configure the **svg-icon** plugin to `nuxt.config.js`:
-
-``` js
-export default {
-  // ...
-
-  plugins: [
-    // ...
-    { src: '~/plugins/svg-icon', mode: 'client' }
-  ]
-
-  // ...
-}
-```
+Please use [nuxt-symbol-icons](https://github.com/yisibell/nuxt-symbol-icons) module. more details see it's docs.
 
 # CHANGE LOG
 
