@@ -67,11 +67,11 @@ export default {
 
 # Properties
 
-| Prop name | Default value | Description | Type | Support version |
+| Prop name | Default value | Description | Type | Added in |
 | :---: | :---: | :---: | :---: | :---: |
 | `name` | `undefined` |   SVG **symbol name** which is SVG filename in the SVG folder.  | `string` | `v1.2.0` |
 | `symbolPrefix` | `icon-` |   SVG **symbol id prefix**.  | `string` | `v1.2.0` |
-| `icon-class` | `undefined` |   alias of `name` | `string` | `v1.1.0` |
+| `iconClass` | `undefined` |   alias of `name` | `string` | `v1.1.0` |
 | `className` | `undefined` |  Add Extra class name to SVG Element | `string` | `v1.1.0` |
 | `color` | `undefined` | Define SVG color | `string` | `v1.1.0` |
 | `fontSize` | `undefined` | Define SVG size  | `string` | `v1.1.0` |
