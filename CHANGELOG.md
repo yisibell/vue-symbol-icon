@@ -1,4 +1,15 @@
 # CHANGE LOG
+## v2.1.0
+
+
+### 🚀 Enhancements
+
+  - Support customize symbolIdPrefix and globalComponentName in global (509fd5c)
+
+### ❤️  Contributors
+
+- Wenqing <wenqing@kerrylan.com>
+
 ## v2.0.3
 
 
