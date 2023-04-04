@@ -65,23 +65,30 @@ export default {
 }
 ```
 
-# Properties
+# Plugin options
+
+| Key | Type | Default value | Description |
+| :---: | :---: | :---: | :---: |
+| `globalComponentName` <br /> (Added in `v2.1.0`) | `string` | `SvgIcon` | Define the global component name. |
+| `symbolIdPrefix` <br /> (Added in `v2.1.0`) | `string` | `icon-` | Set SVG **symbol id prefix** in global. |
+
+# Component properties
 
 | Prop name | Default value | Description | Type | Added in |
 | :---: | :---: | :---: | :---: | :---: |
 | `name` | `undefined` |   SVG **symbol name** which is SVG filename in the SVG folder.  | `string` | `v1.2.0` |
-| `symbolPrefix` | `icon-` |   SVG **symbol id prefix**.  | `string` | `v1.2.0` |
+| `symbolIdPrefix` | `undefined` |   SVG **symbol id prefix**.  | `string` | `v1.2.0` |
 | `iconClass` | `undefined` |   alias of `name` | `string` | `v1.1.0` |
 | `className` | `undefined` |  Add Extra class name to SVG Element | `string` | `v1.1.0` |
 | `color` | `undefined` | Define SVG color | `string` | `v1.1.0` |
 | `fontSize` | `undefined` | Define SVG size  | `string` | `v1.1.0` |
 
 
-:warning: TIPS,  `name` and `symbolPrefix` form the **Symbol id**.
+:warning: TIPS,  `name` and `symbolIdPrefix` form the **Symbol id**. Global plugin configuration has lower priority than component properties.
 
 ```vue
 <template>
-  <svg-icon symbol-prefix="icon-" name="symbol-name" />
+  <svg-icon symbol-id-prefix="icon-" name="symbol-name" />
 </template>
 ```
 

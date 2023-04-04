@@ -26,9 +26,9 @@ export default {
   name: 'SvgIcon',
   props: {
     // symbol name prefix
-    symbolPrefix: {
+    symbolIdPrefix: {
       type: String,
-      default: 'icon-'
+      default: undefined
     },
     // symbol name
     name: {
@@ -54,6 +54,9 @@ export default {
     }
   },
   computed: {
+    globalOptions () {
+      return this.$vueSymbolIcon || {}
+    },
     styleVars () {
       return {
         '--svg-icon-color': this.color,
@@ -64,7 +67,8 @@ export default {
       return this.name || this.iconClass || ''
     },
     symbolId () {
-      return `#${this.symbolPrefix}${this.symbolName}`
+      const prefix = this.symbolIdPrefix || this.globalOptions.symbolIdPrefix
+      return `#${prefix}${this.symbolName}`
     },
     isExternal () {
       return this.isOutLinks(this.symbolName)
@@ -75,6 +79,7 @@ export default {
         '-webkit-mask': `url(${this.symbolName}) no-repeat 50% 50%`
       }
     }
+
   },
   watch: {
     color: {
