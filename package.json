@@ -20,7 +20,8 @@
     "nuxt"
   ],
   "files": [
-    "dist"
+    "dist",
+    "src/components"
   ],
   "repository": {
     "type": "git",

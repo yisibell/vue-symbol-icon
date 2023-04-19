@@ -99,12 +99,11 @@ export default {
       return /^(https?:|mailto:|tel:)/.test(path)
     },
     setSVGPathToCurrentColor () {
+      if (!window || !document) return
       if (!this.color) return
 
       this.$nextTick(() => {
-        if (!document) return
-
-        const targetSymbol = document.querySelector(`${this.symbolId}`)
+        const targetSymbol = document?.querySelector(`${this.symbolId}`)
         targetSymbol && targetSymbol.classList.add('use-current-color')
       })
     }
