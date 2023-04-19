@@ -1,4 +1,17 @@
 # CHANGE LOG
+## v2.1.2
+
+[compare changes](https://github.com/yisibell/vue-symbol-icon/compare/v2.1.1...v2.1.2)
+
+
+### 🩹 Fixes
+
+  - Ssr render error ([c5f5692](https://github.com/yisibell/vue-symbol-icon/commit/c5f5692))
+
+### ❤️  Contributors
+
+- Wenqing <wenqing@kerrylan.com>
+
 ## v2.1.1
 
 [compare changes](https://github.com/yisibell/vue-symbol-icon/compare/v2.1.0...v2.1.1)
