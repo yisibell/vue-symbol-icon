@@ -100,7 +100,10 @@ export default {
     },
     setSVGPathToCurrentColor () {
       if (!this.color) return
+
       this.$nextTick(() => {
+        if (!document) return
+
         const targetSymbol = document.querySelector(`${this.symbolId}`)
         targetSymbol && targetSymbol.classList.add('use-current-color')
       })
