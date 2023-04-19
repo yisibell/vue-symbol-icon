@@ -1,4 +1,17 @@
 # CHANGE LOG
+## v2.1.1
+
+[compare changes](https://github.com/yisibell/vue-symbol-icon/compare/v2.1.0...v2.1.1)
+
+
+### 🩹 Fixes
+
+  - Document is not defined ([4b670ae](https://github.com/yisibell/vue-symbol-icon/commit/4b670ae))
+
+### ❤️  Contributors
+
+- Wenqing <wenqing@kerrylan.com>
+
 ## v2.1.0
 
 
