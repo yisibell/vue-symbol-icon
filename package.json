@@ -47,7 +47,7 @@
     "@vue/cli-plugin-eslint": "~5.0.8",
     "@vue/cli-service": "~5.0.8",
     "@vue/eslint-config-standard": "^7.0.0",
-    "changelogen": "~0.4.1",
+    "changelogen": "~0.5.3",
     "core-js": "^3.6.4",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.29.0",
