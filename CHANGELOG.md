@@ -1,4 +1,17 @@
 # CHANGE LOG
+## v2.2.0
+
+[compare changes](https://github.com/yisibell/vue-symbol-icon/compare/v2.1.2...v2.2.0)
+
+
+### 🚀 Enhancements
+
+  - Add alias size,width for font-size ([5b4e37d](https://github.com/yisibell/vue-symbol-icon/commit/5b4e37d))
+
+### ❤️  Contributors
+
+- Wenqing <wenqing@kerrylan.com>
+
 ## v2.1.2
 
 [compare changes](https://github.com/yisibell/vue-symbol-icon/compare/v2.1.1...v2.1.2)
