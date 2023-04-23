@@ -81,7 +81,9 @@ export default {
 | `iconClass` | `undefined` |   alias of `name` | `string` | `v1.1.0` |
 | `className` | `undefined` |  Add Extra class name to SVG Element | `string` | `v1.1.0` |
 | `color` | `undefined` | Define SVG color | `string` | `v1.1.0` |
-| `fontSize` | `undefined` | Define SVG size  | `string` | `v1.1.0` |
+| `fontSize` | `undefined` | Define SVG size  | `string/number` | `v1.1.0` |
+| `size` | `undefined` | Alias of `fontSize`  | `string/number` | `v2.2.0` |
+| `width` | `undefined` | Alias of `fontSize`  | `string/number` | `v2.2.0` |
 
 
 :warning: TIPS,  `name` and `symbolIdPrefix` form the **Symbol id**. Global plugin configuration has lower priority than component properties.

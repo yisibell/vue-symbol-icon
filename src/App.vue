@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <h3>单色图标：</h3>
+    <h3>单色图标（改色）：</h3>
     <svg-icon
       name="app"
       class="test"
@@ -18,12 +18,20 @@
       color="yellow"
       font-size="36px"
     />
+
+    <h3>单色图标（原色）：</h3>
+
     <svg-icon
       name="text-de-line-through"
       font-size="36px"
     />
 
-    <h3>多色图标：</h3>
+    <svg-icon
+      name="delete"
+      width="36"
+    />
+
+    <h3>多色图标（原色）：</h3>
 
     <svg-icon
       name="buding"

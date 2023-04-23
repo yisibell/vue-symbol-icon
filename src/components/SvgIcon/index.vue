@@ -45,7 +45,16 @@ export default {
       default: undefined
     },
     fontSize: {
-      type: String,
+      type: [String, Number],
+      default: undefined
+    },
+    // alias of fontSize
+    size: {
+      type: [String, Number],
+      default: undefined
+    },
+    width: {
+      type: [String, Number],
       default: undefined
     },
     className: {
@@ -57,10 +66,19 @@ export default {
     globalOptions () {
       return this.$vueSymbolIcon || {}
     },
+    finalFontSize () {
+      if (this.size) return this.size
+
+      if (this.width) return this.width
+
+      return this.fontSize
+    },
     styleVars () {
+      const fontSizeWithUnit = this.isNumberLike(this.finalFontSize) ? `${this.finalFontSize}px` : this.finalFontSize
+
       return {
         '--svg-icon-color': this.color,
-        '--svg-icon-font-size': this.fontSize
+        '--svg-icon-font-size': fontSizeWithUnit
       }
     },
     symbolName () {
@@ -92,6 +110,9 @@ export default {
     this.init()
   },
   methods: {
+    isNumberLike (value) {
+      return /^\d*$/.test(value)
+    },
     init () {
       this.setSVGPathToCurrentColor()
     },
@@ -103,7 +124,7 @@ export default {
       if (!this.color) return
 
       this.$nextTick(() => {
-        const targetSymbol = document?.querySelector(`${this.symbolId}`)
+        const targetSymbol = document.querySelector(`${this.symbolId}`)
         targetSymbol && targetSymbol.classList.add('use-current-color')
       })
     }
