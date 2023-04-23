@@ -111,7 +111,7 @@ It's look like:
 const path = require('path')
 
 function resolve(dir) {
-  return path.join(__dirname, dir)
+  return path.resolve(__dirname, dir)
 }
 
 module.exports = {
@@ -121,14 +121,14 @@ module.exports = {
     // Change the configuration of url-loader so that it does not process svg files used as icons in the specified folder
     config.module
       .rule("svg")
-      .exclude.add(resolve("src/icons"))
+      .exclude.add(resolve("src/icons/svg"))
       .end();
 
     // Add svg-sprite-loader to process svg files in the specified folder
     config.module
       .rule("icons")
       .test(/\.svg$/)
-      .include.add(resolve("src/icons"))
+      .include.add(resolve("src/icons/svg"))
       .end()
       .use("svg-sprite-loader")
       .loader("svg-sprite-loader")
