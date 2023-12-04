@@ -1,7 +1,7 @@
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 144:
+/***/ 804:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -15,14 +15,14 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".svg-icon-wrapper[data-v-864e628a]{display:inline-flex;justify-content:center;align-items:center;color:var(--svg-icon-color);font-size:var(--svg-icon-font-size)}.svg-icon[data-v-864e628a]{width:1em;height:1em;fill:currentColor;stroke:currentColor}.svg-external-icon[data-v-864e628a]{background-color:currentColor;-webkit-mask-size:cover!important;mask-size:cover!important;display:inline-block}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".svg-icon-wrapper[data-v-6f6fe59e]{display:inline-flex;justify-content:center;align-items:center;color:var(--svg-icon-color);font-size:var(--svg-icon-font-size)}.svg-icon[data-v-6f6fe59e]{width:1em;height:1em;fill:currentColor;stroke:currentColor}.svg-external-icon[data-v-6f6fe59e]{background-color:currentColor;-webkit-mask-size:cover!important;mask-size:cover!important;display:inline-block}", ""]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
 
 /***/ }),
 
-/***/ 524:
+/***/ 212:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -147,35 +147,55 @@ module.exports = function (i) {
 
 /***/ }),
 
-/***/ 525:
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ 744:
+/***/ (function(__unused_webpack_module, exports) {
 
-// style-loader: Adds some css to the DOM by adding a <style> tag
+"use strict";
+var __webpack_unused_export__;
 
-// load the styles
-var content = __webpack_require__(144);
-if(content.__esModule) content = content.default;
-if(typeof content === 'string') content = [[module.id, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var add = (__webpack_require__(402)/* ["default"] */ .Z)
-var update = add("62874662", content, true, {"sourceMap":false,"shadowMode":false});
+__webpack_unused_export__ = ({ value: true });
+// runtime helper for setting properties on components
+// in a tree-shakable way
+exports.Z = (sfc, props) => {
+    const target = sfc.__vccOpts || sfc;
+    for (const [key, val] of props) {
+        target[key] = val;
+    }
+    return target;
+};
+
 
 /***/ }),
 
-/***/ 707:
+/***/ 360:
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(524);
+var content = __webpack_require__(804);
 if(content.__esModule) content = content.default;
 if(typeof content === 'string') content = [[module.id, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
 var add = (__webpack_require__(402)/* ["default"] */ .Z)
-var update = add("2f4f4cd8", content, true, {"sourceMap":false,"shadowMode":false});
+var update = add("47d81dba", content, true, {"sourceMap":false,"shadowMode":false});
+
+/***/ }),
+
+/***/ 782:
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(212);
+if(content.__esModule) content = content.default;
+if(typeof content === 'string') content = [[module.id, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var add = (__webpack_require__(402)/* ["default"] */ .Z)
+var update = add("1cb4d7e6", content, true, {"sourceMap":false,"shadowMode":false});
 
 /***/ }),
 
@@ -548,32 +568,34 @@ if (typeof window !== 'undefined') {
 // Indicate to webpack that this file can be concatenated
 /* harmony default export */ var setPublicPath = (null);
 
-;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/SvgIcon/index.vue?vue&type=template&id=864e628a&scoped=true&
-var render = function render() {
-  var _vm = this,
-    _c = _vm._self._c;
-  return _vm.isExternal ? _c('div', _vm._g({
-    class: ['svg-external-icon', 'svg-icon', _vm.className],
-    style: _vm.styleExternalIcon
-  }, _vm.$listeners)) : _c('span', _vm._g({
-    staticClass: "svg-icon-wrapper",
-    style: _vm.styleVars
-  }, _vm.$listeners), [_c('svg', {
-    class: ['svg-icon', _vm.className],
-    attrs: {
-      "font-size": _vm.fontSize,
-      "aria-hidden": "true"
-    }
-  }, [_c('use', {
-    attrs: {
-      "href": _vm.symbolId
-    }
-  })])]);
-};
-var staticRenderFns = [];
+;// CONCATENATED MODULE: external {"commonjs":"vue","commonjs2":"vue","root":"Vue"}
+var external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject = require("vue");
+;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/SvgIcon/index.vue?vue&type=template&id=6f6fe59e&scoped=true
 
-;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/SvgIcon/index.vue?vue&type=script&lang=js&
-/* harmony default export */ var SvgIconvue_type_script_lang_js_ = ({
+const _withScopeId = n => (_pushScopeId("data-v-6f6fe59e"), n = n(), _popScopeId(), n);
+const _hoisted_1 = ["font-size"];
+const _hoisted_2 = ["href"];
+function render(_ctx, _cache, $props, $setup, $data, $options) {
+  return $options.isExternal ? ((0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.openBlock)(), (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createElementBlock)("div", {
+    key: 0,
+    style: (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.normalizeStyle)($options.styleExternalIcon),
+    class: (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.normalizeClass)(['svg-external-icon', 'svg-icon', $props.className])
+  }, null, 6)) : ((0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.openBlock)(), (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createElementBlock)("span", (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.mergeProps)({
+    key: 1,
+    style: $options.styleVars,
+    class: "svg-icon-wrapper"
+  }, _ctx.$attrs), [((0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.openBlock)(), (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createElementBlock)("svg", {
+    class: (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.normalizeClass)(['svg-icon', $props.className]),
+    "font-size": $props.fontSize,
+    "aria-hidden": "true"
+  }, [(0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createElementVNode)("use", {
+    href: $options.symbolId
+  }, null, 8, _hoisted_2)], 10, _hoisted_1))], 16));
+}
+;// CONCATENATED MODULE: ./src/components/SvgIcon/index.vue?vue&type=template&id=6f6fe59e&scoped=true
+
+;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/SvgIcon/index.vue?vue&type=script&lang=js
+/* harmony default export */ var SvgIconvue_type_script_lang_js = ({
   name: 'SvgIcon',
   props: {
     // symbol name prefix
@@ -676,115 +698,20 @@ var staticRenderFns = [];
     }
   }
 });
-;// CONCATENATED MODULE: ./src/components/SvgIcon/index.vue?vue&type=script&lang=js&
- /* harmony default export */ var components_SvgIconvue_type_script_lang_js_ = (SvgIconvue_type_script_lang_js_); 
-// EXTERNAL MODULE: ./node_modules/vue-style-loader/index.js??clonedRuleSet-12.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/SvgIcon/index.vue?vue&type=style&index=0&id=864e628a&prod&scoped=true&lang=css&
-var SvgIconvue_type_style_index_0_id_864e628a_prod_scoped_true_lang_css_ = __webpack_require__(525);
-;// CONCATENATED MODULE: ./src/components/SvgIcon/index.vue?vue&type=style&index=0&id=864e628a&prod&scoped=true&lang=css&
+;// CONCATENATED MODULE: ./src/components/SvgIcon/index.vue?vue&type=script&lang=js
+ 
+// EXTERNAL MODULE: ./node_modules/vue-style-loader/index.js??clonedRuleSet-12.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/SvgIcon/index.vue?vue&type=style&index=0&id=6f6fe59e&scoped=true&lang=css
+var SvgIconvue_type_style_index_0_id_6f6fe59e_scoped_true_lang_css = __webpack_require__(360);
+;// CONCATENATED MODULE: ./src/components/SvgIcon/index.vue?vue&type=style&index=0&id=6f6fe59e&scoped=true&lang=css
 
-// EXTERNAL MODULE: ./node_modules/vue-style-loader/index.js??clonedRuleSet-12.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/SvgIcon/index.vue?vue&type=style&index=1&id=864e628a&prod&lang=css&
-var SvgIconvue_type_style_index_1_id_864e628a_prod_lang_css_ = __webpack_require__(707);
-;// CONCATENATED MODULE: ./src/components/SvgIcon/index.vue?vue&type=style&index=1&id=864e628a&prod&lang=css&
+// EXTERNAL MODULE: ./node_modules/vue-style-loader/index.js??clonedRuleSet-12.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/SvgIcon/index.vue?vue&type=style&index=1&id=6f6fe59e&lang=css
+var SvgIconvue_type_style_index_1_id_6f6fe59e_lang_css = __webpack_require__(782);
+;// CONCATENATED MODULE: ./src/components/SvgIcon/index.vue?vue&type=style&index=1&id=6f6fe59e&lang=css
 
-;// CONCATENATED MODULE: ./node_modules/@vue/vue-loader-v15/lib/runtime/componentNormalizer.js
-/* globals __VUE_SSR_CONTEXT__ */
-
-// IMPORTANT: Do NOT use ES2015 features in this file (except for modules).
-// This module is a runtime utility for cleaner component module output and will
-// be included in the final webpack user bundle.
-
-function normalizeComponent(
-  scriptExports,
-  render,
-  staticRenderFns,
-  functionalTemplate,
-  injectStyles,
-  scopeId,
-  moduleIdentifier /* server only */,
-  shadowMode /* vue-cli only */
-) {
-  // Vue.extend constructor export interop
-  var options =
-    typeof scriptExports === 'function' ? scriptExports.options : scriptExports
-
-  // render functions
-  if (render) {
-    options.render = render
-    options.staticRenderFns = staticRenderFns
-    options._compiled = true
-  }
-
-  // functional template
-  if (functionalTemplate) {
-    options.functional = true
-  }
-
-  // scopedId
-  if (scopeId) {
-    options._scopeId = 'data-v-' + scopeId
-  }
-
-  var hook
-  if (moduleIdentifier) {
-    // server build
-    hook = function (context) {
-      // 2.3 injection
-      context =
-        context || // cached call
-        (this.$vnode && this.$vnode.ssrContext) || // stateful
-        (this.parent && this.parent.$vnode && this.parent.$vnode.ssrContext) // functional
-      // 2.2 with runInNewContext: true
-      if (!context && typeof __VUE_SSR_CONTEXT__ !== 'undefined') {
-        context = __VUE_SSR_CONTEXT__
-      }
-      // inject component styles
-      if (injectStyles) {
-        injectStyles.call(this, context)
-      }
-      // register component module identifier for async chunk inferrence
-      if (context && context._registeredComponents) {
-        context._registeredComponents.add(moduleIdentifier)
-      }
-    }
-    // used by ssr in case component is cached and beforeCreate
-    // never gets called
-    options._ssrRegister = hook
-  } else if (injectStyles) {
-    hook = shadowMode
-      ? function () {
-          injectStyles.call(
-            this,
-            (options.functional ? this.parent : this).$root.$options.shadowRoot
-          )
-        }
-      : injectStyles
-  }
-
-  if (hook) {
-    if (options.functional) {
-      // for template-only hot-reload because in that case the render fn doesn't
-      // go through the normalizer
-      options._injectStyles = hook
-      // register for functional component in vue file
-      var originalRender = options.render
-      options.render = function renderWithStyleInjection(h, context) {
-        hook.call(context)
-        return originalRender(h, context)
-      }
-    } else {
-      // inject component registration as beforeCreate hook
-      var existing = options.beforeCreate
-      options.beforeCreate = existing ? [].concat(existing, hook) : [hook]
-    }
-  }
-
-  return {
-    exports: scriptExports,
-    options: options
-  }
-}
-
+// EXTERNAL MODULE: ./node_modules/vue-loader/dist/exportHelper.js
+var exportHelper = __webpack_require__(744);
 ;// CONCATENATED MODULE: ./src/components/SvgIcon/index.vue
+
 
 
 
@@ -792,29 +719,18 @@ function normalizeComponent(
 
 
 
-/* normalize component */
+const __exports__ = /*#__PURE__*/(0,exportHelper/* default */.Z)(SvgIconvue_type_script_lang_js, [['render',render],['__scopeId',"data-v-6f6fe59e"]])
 
-var component = normalizeComponent(
-  components_SvgIconvue_type_script_lang_js_,
-  render,
-  staticRenderFns,
-  false,
-  null,
-  "864e628a",
-  null
-  
-)
-
-/* harmony default export */ var SvgIcon = (component.exports);
+/* harmony default export */ var SvgIcon = (__exports__);
 ;// CONCATENATED MODULE: ./src/components/index.js
 
-const install = (Vue, options) => {
+const install = (app, options) => {
   const finalOptions = Object.assign({
     globalComponentName: SvgIcon.name || 'SvgIcon',
     symbolIdPrefix: 'icon-'
   }, options);
-  Vue.prototype.$vueSymbolIcon = finalOptions;
-  Vue.component(finalOptions.globalComponentName, SvgIcon);
+  app.config.globalProperties.$vueSymbolIcon = finalOptions;
+  app.component(finalOptions.globalComponentName, SvgIcon);
 };
 
 /* harmony default export */ var components = ({
