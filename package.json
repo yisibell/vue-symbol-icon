@@ -1,6 +1,6 @@
 {
   "name": "vue-symbol-icon",
-  "version": "2.2.3",
+  "version": "2.2.4",
   "main": "dist/vue-symbol-icon.umd.js",
   "description": "A Vue SVG Symbol icon component for svg-sprite-loader, Easy to custom SVG icon 's color and size!!!",
   "author": {
