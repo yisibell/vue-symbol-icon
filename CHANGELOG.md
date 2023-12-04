@@ -1,4 +1,17 @@
 # CHANGE LOG
+## v2.2.3
+
+[compare changes](https://github.com/yisibell/vue-symbol-icon/compare/v2.2.2...v2.2.3)
+
+
+### 🏡 Chore
+
+  - **docs:** Update readme ([72615b9](https://github.com/yisibell/vue-symbol-icon/commit/72615b9))
+
+### ❤️  Contributors
+
+- Wenqing <wenqing@kerrylan.com>
+
 ## v2.2.2
 
 [compare changes](https://github.com/yisibell/vue-symbol-icon/compare/v2.2.1...v2.2.2)
