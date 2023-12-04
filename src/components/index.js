@@ -1,14 +1,14 @@
 import SvgIcon from './SvgIcon/index'
 
-const install = (Vue, options) => {
+const install = (app, options) => {
   const finalOptions = Object.assign({
     globalComponentName: SvgIcon.name || 'SvgIcon',
     symbolIdPrefix: 'icon-'
   }, options)
 
-  Vue.prototype.$vueSymbolIcon = finalOptions
+  app.config.globalProperties.$vueSymbolIcon = finalOptions
 
-  Vue.component(finalOptions.globalComponentName, SvgIcon)
+  app.component(finalOptions.globalComponentName, SvgIcon)
 }
 
 export {

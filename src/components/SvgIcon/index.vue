@@ -3,13 +3,12 @@
     v-if="isExternal"
     :style="styleExternalIcon"
     :class="['svg-external-icon', 'svg-icon', className]"
-    v-on="$listeners"
   />
   <span
     v-else
     :style="styleVars"
     class="svg-icon-wrapper"
-    v-on="$listeners"
+    v-bind="$attrs"
   >
     <svg
       :class="['svg-icon', className]"

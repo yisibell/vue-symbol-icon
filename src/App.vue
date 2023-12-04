@@ -6,6 +6,7 @@
       class="test"
       color="red"
       font-size="36px"
+      @click="handleClick"
     />
     <svg-icon
       name="dashboard"
@@ -41,9 +42,19 @@
 </template>
 
 <script>
-export default {
-  name: 'App'
-}
+import { defineComponent } from 'vue'
+export default defineComponent({
+  name: 'App',
+  setup () {
+    const handleClick = (e) => {
+      console.log(e)
+    }
+
+    return {
+      handleClick
+    }
+  }
+})
 </script>
 
 <style>

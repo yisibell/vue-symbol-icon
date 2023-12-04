@@ -1,10 +1,9 @@
-import Vue from 'vue'
+import { createApp } from 'vue'
 import App from './App.vue'
+import { installIcons } from '@/icons'
 
-import '@/icons'
+const app = createApp(App)
 
-Vue.config.productionTip = false
+installIcons(app)
 
-new Vue({
-  render: h => h(App)
-}).$mount('#app')
+app.mount('#app')
