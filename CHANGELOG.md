@@ -1,4 +1,21 @@
 # CHANGE LOG
+## v3.0.0
+
+[compare changes](https://github.com/yisibell/vue-symbol-icon/compare/v2.2.2...v3.0.0)
+
+
+### 🚀 Enhancements
+
+  - ⚠️  Support for vue 3 ([862be03](https://github.com/yisibell/vue-symbol-icon/commit/862be03))
+
+#### ⚠️  Breaking Changes
+
+  - ⚠️  Support for vue 3 ([862be03](https://github.com/yisibell/vue-symbol-icon/commit/862be03))
+
+### ❤️  Contributors
+
+- Wenqing <wenqing@kerrylan.com>
+
 ## v2.2.2
 
 [compare changes](https://github.com/yisibell/vue-symbol-icon/compare/v2.2.1...v2.2.2)
