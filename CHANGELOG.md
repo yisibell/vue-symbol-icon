@@ -1,4 +1,18 @@
 # CHANGE LOG
+## v3.0.1
+
+[compare changes](https://github.com/yisibell/vue-symbol-icon/compare/v3.0.0...v3.0.1)
+
+
+### 🏡 Chore
+
+  - Sync dist ([ea55925](https://github.com/yisibell/vue-symbol-icon/commit/ea55925))
+  - **docs:** Update v3 docs ([ddbc266](https://github.com/yisibell/vue-symbol-icon/commit/ddbc266))
+
+### ❤️  Contributors
+
+- Wenqing <wenqing@kerrylan.com>
+
 ## v3.0.0
 
 [compare changes](https://github.com/yisibell/vue-symbol-icon/compare/v2.2.2...v3.0.0)
