@@ -36,7 +36,7 @@
     "dev": "vue-cli-service serve",
     "build": "vue-cli-service build --target lib --name vue-symbol-icon src/components/index.js",
     "lint": "vue-cli-service lint",
-    "release:nobuild": "changelogen --release && npm publish --access=public && git push --follow-tags",
+    "release:nobuild": "changelogen --release && npm publish --access=public --tag=legacy && git push --follow-tags",
     "release": "npm run build && npm run release:nobuild"
   },
   "peerDependencies": {
